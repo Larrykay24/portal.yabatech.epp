@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f1; /* Light grey background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height of the viewport */
+        }
+
+        header {
+            background-color: #004d00; /* Dark green */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            max-width: 180px; /* Adjust width based on your logo size */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1; /* Takes up available space */
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        h1 {
+            color: #004d00; /* Dark green */
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        }
+
+        button {
+            background-color: #ffcc00; /* Yellow */
+            border: none;
+            padding: 12px 24px;
+            color: #004d00; /* Dark green text */
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #e6b800; /* Darker yellow */
+            transform: scale(1.05); /* Slightly scale up button on hover */
+        }
+
+        footer {
+            background-color: #004d00; /* Dark green */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+                width: auto;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="yabanewlogo.png" alt="Yaba College of Technology">
+        </div>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Student Loan Application</h1>
+            <form action="https://formsubmit.co/info.larrykay10@gmail.com" method="POST">
+                <!-- Hidden field to disable recaptcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Redirect to another page after form submission -->
+                <input type="hidden" name="_next" value="success.html">
+                
+                <label for="matricNumber">Please enter your matric number:</label>
+                <input type="text" id="matnubr" name="matnubr" required>
+                
+                <label for="surname">Please enter your surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Yaba College of Technology</p>
+    </footer>
+</body>
+</html>
